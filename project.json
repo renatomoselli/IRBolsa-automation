@@ -3,16 +3,11 @@
   "description": "Importação de Notas de Corretagem padrão SINACOR",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Cognitive.Activities": "[2.2.2]",
-    "UiPath.Excel.Activities": "[2.5.4]",
-    "UiPath.IntelligentOCR.Activities": "[2.0.1]",
-    "UiPath.Mail.Activities": "[1.4.1]",
-    "UiPath.PDF.Activities": "[2.0.1]",
-    "UiPath.System.Activities": "[18.4.2]",
-    "UiPath.Terminal.Activities": "[1.3.2]",
-    "UiPath.UIAutomation.Activities": "[18.4.5]",
-    "UiPath.WebAPI.Activities": "[1.4.2]",
-    "UiPath.Word.Activities": "[1.3.2]"
+    "UiPath.Credentials.Activities": "1.1.6479.13204",
+    "UiPath.Excel.Activities": "[2.7.2]",
+    "UiPath.System.Activities": "[19.10.1]",
+    "UiPath.UIAutomation.Activities": "[19.11.2]",
+    "UiPath.WebAPI.Activities": "[1.4.4]"
   },
   "schemaVersion": "3.2",
   "studioVersion": "18.2",
