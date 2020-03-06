@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>781,1250</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>781,1265</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetAllSettings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,6 +65,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Word</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -72,7 +73,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow outputs a settings Json with key/value pairs to be used in the project. Settings are read from local config file." DisplayName="Get All Settings" sap:VirtualizedContainerService.HintSize="741,1170" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Description: This workflow outputs a settings config Json with key/value pairs to be used in the project. Settings are read from local config file." DisplayName="Init All Settings" sap:VirtualizedContainerService.HintSize="741,1185" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="configExists" />
       <Variable x:TypeArguments="x:String" Name="configFileContent" />
@@ -85,7 +86,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Reading Config" sap:VirtualizedContainerService.HintSize="719,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;IRBolsa Automation | Get All Settings | Started.&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Reading Config" sap:VirtualizedContainerService.HintSize="719,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;IRBolsa Automation | InitAllSettings | Started.&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -133,13 +134,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log message - Business Exception" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Fatal" Message="[&quot;IRBolsa Automation | Get All Settings | Business Exception occurred: The config.json file does not exist.&quot;]" />
-            <Throw Exception="[New Exception(&quot;IRBolsa Automation | Get All Settings | Business Exception occurred: The config.json file does not exist.&quot;)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            <ui:LogMessage DisplayName="Log message - Business Exception" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Fatal" Message="[&quot;IRBolsa Automation | InitAllSettings | Business Exception occurred: The config.json file does not exist.&quot;]" />
+            <Throw Exception="[New Exception(&quot;IRBolsa Automation | InitAllSettings | Business Exception occurred: The config.json file does not exist.&quot;)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </Sequence>
         </If.Else>
       </If>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message - Reading Config" sap:VirtualizedContainerService.HintSize="719,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;IRBolsa Automation | Get All Settings | Finished.&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Reading Config" sap:VirtualizedContainerService.HintSize="719,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;IRBolsa Automation | InitAllSettings | Finished.&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

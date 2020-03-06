@@ -1,6 +1,9 @@
 ﻿{
 	"Credentials":
 	{
-		"CredentialNameBussola": "BUSSOLA_INV"
-	}
+		"CredentialName": "BUSSOLA_INV"
+	},
+	"UrlLogin": "https://app.bussoladoinvestidor.com.br/nb/auth/login",
+	"UrlWallet": "https://app.bussoladoinvestidor.com.br/carteira_completo.asp",
+	"BrokerName": "Nova Futura - Mini"
 }
